@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#xog-game-board {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 300px;
+}
+
+.xog-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.xog-cell {
+    width: 100px;
+    height: 100px;
+    background-color: #ece9e7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border: 1px solid #31241d;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .xog-cell {
+        width: 80px;
+        height: 80px;
+        font-size: 20px;
+    }
+}
